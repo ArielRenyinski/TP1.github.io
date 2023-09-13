@@ -1,0 +1,116 @@
+
+/*
+    TP_1: HTML + CSS
+    INTEGRANTES DEL GRUPO:
+      AGUILERA, PAULA
+      NEMEROVSKY, PAULA
+      RENYINSKI, LUIS ARIEL
+      URIBIO, RODRIGO
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /*url de tipografia extraida de googleFonts*/
+
+
+* {                                     
+    margin: 0;                                           
+    padding: 0;
+}
+
+ /*INICIO ESTILOS DEL MENU*/
+    .menu{
+        background: #0c0e1d;                           /*Color de fondo del menu*/
+        height: 6vh;                                     /*Altura del menu*/
+        width: 100%;                                     /*Anchura del menu*/
+        padding-top: 1.1em;                              /*Espacio superior que le da al texto*/
+    }
+
+    ul{
+        display: inline-block;                           /*Hace que el menu este en una sola fila*/
+        font-size: 18px;                                 /*Tamaño de tipografia en el menu*/
+    }
+    
+    ul li{
+        display: inline-block;                           /*Menu en una sola fila*/
+    }
+
+    ul li a{
+        font-family: 'Roboto', sans-serif !important;    /*Tipo de tipografia*/
+        text-decoration: none;                           /*Anula el subrayado por defecto*/
+        color: white;                                  /*Color de texto*/
+        padding: 7em;                                    /*espacios del nav*/
+    }
+
+    ul li a:hover{
+        background: rgb(19,22,46);                     /*Color del menu al tener el mouse sobre el elemento nav*/
+    }
+
+/*FIN ESTILOS DEL MENU*/
+
+
+/* INICIO SECCION NOSOTROS*/
+
+    h2{ 
+        text-align: center;                              /*Alineacion en el centro de NOSOTROS*/
+        padding-top: 4em;                                /*Espacio entre Nav y H2*/
+        color: #dddddd;                                /*Color del texto H2*/
+        font-size: 1.5em;                                /*Tamaño de la tipografia*/
+        font-family: 'Roboto', sans-serif !important;    /*Fuente de la tipografia en h2*/
+    }
+
+    .contenedor{
+        display: flex;                                   /*Alinea en una sola fila la imagen con el texto*/
+        justify-content: center;                         /*Contenido centradp*/
+        line-height: 1.4em;                              /*Espacio entre lineas de texto*/
+        font-size: 1em;                                  /*Tamaño de fuente*/
+        color: #e0dfdf;                                /*Color de texto*/
+        margin-top: 5em;                                 /*Margen superior*/
+        margin-right: 10em;                              /*Margen derecho*/
+        margin-left: 10em;                               /*Margen izquierdo*/
+        text-align: justify;                             /*Alineacion del texto centrado*/
+        font-family: 'Roboto', sans-serif !important;    /*Estilo de tipografia*/
+        background: rgb(19,22,46);                     /*Color de fondo*/
+        padding:1em;                                     /*Espacio de contorno*/
+        border-radius: 20px;                             /*Borde circular*/
+    }
+    .contenedor:hover{
+        background: #0c0e1d;                           /*cambia el color de fondo de la foto y el texto*/
+    }
+
+
+    #Secciones{
+        position:relative ;                                                                     /*Posiciona los elementos dentro del ID Seccion*/
+        min-height: 85vh;                                                                       /*Altura de la pagina (mantiene al footer al final*/ 
+        background: linear-gradient(184deg, rgba(19,22,46,1) 12%, rgba(25,28,60,1) 91%);    /*Color de fondo entre nav y footer*/
+    }
+
+    .estilos_img_nosotros{                           
+        width: 50%;                                  /*Reduccion del ancho al 50% de la imagen*/
+        height: 50%;                                 /*Reduccion de la altura al 50% de la imagen*/
+        margin-top: -7em;                            /*Margen superior, al ser valor negativo, la imagen va hacia*/
+        margin-right:5em ;                           /*Margen derecho de la imagen.da espacio entre la foto y el texto*/
+    }
+
+/* FIN SECCION NOSOTROS*/
+
+
+/* INICIO FOOTER*/                                        
+    footer {
+        width: 100%;                                 /*Anchura del footer*/  
+        height: 6.5vh;                               /*Altura del footer*/
+        background: #2c2c2c;                       /*Color de fondo del footer*/
+        justify-content: center;                     /*Centrado horizontal del footer*/
+        align-items: center;                         /*Centrado vertical del footer*/
+        display: flex;                               /*Deja posicionado centrado el footer*/
+        position: absolute;                          /*Mantiene como posicion absoluta al footer, al tener en posicion relativa la seccion*/
+    }
+
+    footer span {
+        color: rgb(196, 195, 195);                 /*Color del texto en Span del footer*/
+        font-size: 0.8em;                            /*Tamaño de la tipografia del span que está en el footer*/
+        font-family: Arial, Helvetica, sans-serif;   /*Familia tipografica*/
+    }
+/*FIN FOOTER*/
+
+
+
+
